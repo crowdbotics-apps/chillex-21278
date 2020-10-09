@@ -6,31 +6,31 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('users', '0002_auto_20201009_0017'),
+        ("users", "0002_auto_20201009_0017"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='user',
-            name='last_updated',
+            model_name="user",
+            name="last_updated",
         ),
         migrations.RemoveField(
-            model_name='user',
-            name='timestamp_created',
+            model_name="user",
+            name="timestamp_created",
         ),
         migrations.AlterField(
-            model_name='user',
-            name='email',
+            model_name="user",
+            name="email",
             field=models.EmailField(blank=True, max_length=254, null=True),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='first_name',
+            model_name="user",
+            name="first_name",
             field=models.TextField(blank=True, null=True),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='last_name',
+            model_name="user",
+            name="last_name",
             field=models.TextField(blank=True, null=True),
         ),
     ]
